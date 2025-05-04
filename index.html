@@ -37,6 +37,7 @@
     <link rel="preload" href="js/script.js" as="script">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" as="style"
           onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <noscript>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">
     </noscript>
@@ -77,12 +78,12 @@
 <!-- Header with ARIA labels -->
 <header role="banner">
     <div class="container">
-        <div class="logo" itemscope itemtype="https://schema.org/Organization">
-            <a href="/" aria-label="NexKod Systems Homepage">
-                <img src="images/logo.png" alt="NexKod Systems Logo" width="150" height="150" itemprop="logo">
-            </a>
-        </div>
         <nav role="navigation" aria-label="Main navigation">
+            <div class="logo" itemscope itemtype="https://schema.org/Organization">
+                <a href="/" aria-label="NexKod Systems Homepage">
+                    <img src="images/logo.png" alt="NexKod Systems Logo" width="50" height="50" itemprop="logo">
+                </a>
+            </div>
             <ul>
                 <li><a href="#home" aria-current="page">Home</a></li>
                 <li><a href="#services">Services</a></li>
@@ -105,10 +106,10 @@
                 <p>Innovative software solutions for a smarter tomorrow.</p>
                 <a href="#contact" class="btn-primary" aria-label="Get started with NexKod Systems">Get Started</a>
             </div>
-            <div class="hero-image">
-                <img src="images/hero-bg.jpg" alt="Modern software development workspace" width="1920" height="1080"
-                     loading="lazy">
-            </div>
+            <!--            <div class="hero-image">-->
+            <!--                <img src="images/hero-bg.jpg" alt="Modern software development workspace" width="1920" height="1080"-->
+            <!--                     loading="lazy">-->
+            <!--            </div>-->
         </div>
     </section>
 
@@ -122,20 +123,20 @@
                     <h3 itemprop="name">Custom Software</h3>
                     <p itemprop="description">Tailored solutions for your business needs.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" itemscope itemtype="https://schema.org/Service">
                     <i class="fas fa-robot"></i>
-                    <h3>AI & Automation</h3>
-                    <p>Smart systems to streamline operations.</p>
+                    <h3 itemprop="name">AI & Automation</h3>
+                    <p itemprop="description">Smart systems to streamline operations.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" itemscope itemtype="https://schema.org/Service">
                     <i class="fas fa-cloud"></i>
-                    <h3>Cloud Solutions</h3>
-                    <p>Scalable and secure cloud infrastructure.</p>
+                    <h3 itemprop="name">Cloud Solutions</h3>
+                    <p itemprop="description">Scalable and secure cloud infrastructure.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" itemscope itemtype="https://schema.org/Service">
                     <i class="fas fa-shield-alt"></i>
-                    <h3>Cybersecurity</h3>
-                    <p>Protecting your digital assets.</p>
+                    <h3 itemprop="name">Cybersecurity</h3>
+                    <p itemprop="description">Protecting your digital assets.</p>
                 </div>
             </div>
         </div>
@@ -199,7 +200,7 @@
         </div>
     </div>
     <div class="copyright">
-        <p>&copy; 2025 NexKod Systems. All Rights Reserved. v1.0.0(4)</p>
+        <p>&copy; 2025 NexKod Systems. All Rights Reserved. v1.0.5</p>
     </div>
 </footer>
 
