@@ -1,85 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="https://schema.org/Organization">
 <head>
+    <!-- Primary Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NexKod Systems | Coding the Future, Today</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <!-- Header & Navigation -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="images/logo.png" alt="NexKod Systems">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="mobile-menu">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <meta name="description"
+          content="NexKod Systems - Innovative software development and AI solutions. We build next-generation code for modern businesses.">
+    <meta name="keywords"
+          content="software development, AI solutions, custom software, cloud computing, cybersecurity, Malaysia tech company">
+    <meta name="author" content="NexKod Systems">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.nexkod.com"/>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="NexKod Systems | Coding the Future, Today">
+    <meta property="og:description" content="Innovative software solutions for a smarter tomorrow.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.nexkod.com">
+    <meta property="og:image" content="https://www.nexkod.com/images/og-image.jpg">
+    <meta property="og:site_name" content="NexKod Systems">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NexKod Systems | Coding the Future, Today">
+    <meta name="twitter:description" content="Innovative software solutions for a smarter tomorrow.">
+    <meta name="twitter:image" content="https://www.nexkod.com/images/twitter-card.jpg">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="js/script.js" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" as="style"
+          onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">
+    </noscript>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>NexKod Systems | Coding the Future, Today</title>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "NexKod Systems",
+            "url": "https://www.nexkod.com",
+            "logo": "https://www.nexkod.com/images/logo.png",
+            "description": "Innovative software development and AI solutions company",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Kuala Lumpur",
+                "addressRegion": "Wilayah Persekutuan",
+                "addressCountry": "Malaysia"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+603-1234-5678",
+                "contactType": "customer service"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<!-- Skip to Content Link for Accessibility -->
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- Header with ARIA labels -->
+<header role="banner">
+    <div class="container">
+        <div class="logo" itemscope itemtype="https://schema.org/Organization">
+            <a href="/" aria-label="NexKod Systems Homepage">
+                <img src="images/logo.png" alt="NexKod Systems Logo" width="200" height="50" itemprop="logo">
+            </a>
+        </div>
+        <nav role="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="#home" aria-current="page">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu" aria-label="Toggle mobile menu" aria-expanded="false">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<main id="main-content" role="main">
+    <!-- Hero Section with semantic heading -->
+    <section id="home" class="hero" role="region" aria-labelledby="hero-heading">
         <div class="container">
             <div class="hero-content">
-                <h1>Coding the Future, Today</h1>
+                <h1 id="hero-heading">Coding the Future, Today</h1>
                 <p>Innovative software solutions for a smarter tomorrow.</p>
-                <a href="#contact" class="btn-primary">Get Started</a>
+                <a href="#contact" class="btn-primary" aria-label="Get started with NexKod Systems">Get Started</a>
             </div>
             <div class="hero-image">
-                <img src="images/hero-bg.jpg" alt="Tech Innovation">
+                <img src="images/hero-bg.jpg" alt="Modern software development workspace" width="800" height="533"
+                     loading="lazy">
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <!-- Services Section with microdata -->
+    <section id="services" class="services" role="region" aria-labelledby="services-heading">
         <div class="container">
-            <h2>Our Services</h2>
+            <h2 id="services-heading">Our Services</h2>
             <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Custom Software</h3>
-                    <p>Tailored solutions for your business needs.</p>
+                <div class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <i class="fas fa-code" aria-hidden="true"></i>
+                    <h3 itemprop="name">Custom Software</h3>
+                    <p itemprop="description">Tailored solutions for your business needs.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" itemscope itemtype="https://schema.org/Service">
                     <i class="fas fa-robot"></i>
-                    <h3>AI & Automation</h3>
-                    <p>Smart systems to streamline operations.</p>
+                    <h3 itemprop="name">AI & Automation</h3>
+                    <p itemprop="description">Smart systems to streamline operations.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" itemscope itemtype="https://schema.org/Service">
                     <i class="fas fa-cloud"></i>
-                    <h3>Cloud Solutions</h3>
-                    <p>Scalable and secure cloud infrastructure.</p>
+                    <h3 itemprop="name">Cloud Solutions</h3>
+                    <p itemprop="description">Scalable and secure cloud infrastructure.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" itemscope itemtype="https://schema.org/Service">
                     <i class="fas fa-shield-alt"></i>
-                    <h3>Cybersecurity</h3>
-                    <p>Protecting your digital assets.</p>
+                    <h3 itemprop="name">Cybersecurity</h3>
+                    <p itemprop="description">Protecting your digital assets.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about" role="region" aria-labelledby="about-heading">
         <div class="container">
             <div class="about-content">
-                <h2>About NexKod Systems</h2>
-                <p>We are a team of passionate developers and engineers dedicated to pushing the boundaries of technology. Our mission is to deliver cutting-edge software that drives innovation.</p>
+                <h2 id="about-heading">About NexKod Systems</h2>
+                <p>We are a team of passionate developers and engineers dedicated to pushing the boundaries of
+                    technology. Our mission is to deliver cutting-edge software that drives innovation.</p>
                 <a href="#contact" class="btn-secondary">Learn More</a>
             </div>
             <div class="about-image">
@@ -88,13 +156,14 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- Contact Section with proper form labels -->
+    <section id="contact" class="contact" role="region" aria-labelledby="contact-heading">
         <div class="container">
-            <h2>Get In Touch</h2>
-            <form id="contact-form">
+            <h2 id="contact-heading">Get In Touch</h2>
+            <form id="contact-form" role="form">
                 <div class="form-group">
-                    <input type="text" placeholder="Your Name" required>
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
                 </div>
                 <div class="form-group">
                     <input type="email" placeholder="Your Email" required>
@@ -106,33 +175,35 @@
             </form>
         </div>
     </section>
+</main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-logo">
-                <img src="images/logo.png" alt="NexKod Systems">
-            </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-            </div>
+<!-- Footer -->
+<footer role="contentinfo">
+    <div class="container">
+        <div class="footer-logo">
+            <img src="images/logo.png" alt="NexKod Systems">
         </div>
-        <div class="copyright">
-            <p>&copy; 2025 NexKod Systems. All Rights Reserved.</p>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 NexKod Systems. All Rights Reserved.</p>
+    </div>
+</footer>
 
-    <script src="js/script.js"></script>
+<!-- Lazy-loaded JavaScript -->
+<script src="js/script.js" defer></script>
 </body>
 </html>
